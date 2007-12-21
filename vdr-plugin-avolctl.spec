@@ -12,6 +12,7 @@ Group:		Video
 License:	GPL
 URL:		http://martins-kabuff.de/avolctl.html
 Source:		http://martins-kabuff.de/download/vdr-%plugin-%version.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 BuildRequires:	libalsa-devel
 Requires:	vdr-abi = %vdr_abi
