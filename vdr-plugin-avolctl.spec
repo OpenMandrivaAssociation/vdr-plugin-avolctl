@@ -2,7 +2,7 @@
 %define plugin	avolctl
 %define name	vdr-plugin-%plugin
 %define version	0.3b
-%define rel	10
+%define rel	11
 
 Summary:	VDR plugin: Alsa Volume Control
 Name:		%name
