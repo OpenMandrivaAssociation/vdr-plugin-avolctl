@@ -1,19 +1,14 @@
-
 %define plugin	avolctl
-%define name	vdr-plugin-%plugin
-%define version	0.3b
-%define rel	11
 
 Summary:	VDR plugin: Alsa Volume Control
-Name:		%name
-Version:	%version
-Release:	%mkrel %rel
+Name:		vdr-plugin-%plugin
+Version:	0.3b
+Release:	12
 Group:		Video
 License:	GPL
 URL:		http://martins-kabuff.de/avolctl.html
 Source:		http://martins-kabuff.de/download/vdr-%plugin-%version.tar.bz2
 Patch0:		avolctl-0.3b-i18n-1.6.patch
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0
 BuildRequires:	libalsa-devel
 Requires:	vdr-abi = %vdr_abi
@@ -33,17 +28,7 @@ tone control.
 %vdr_plugin_build
 
 %install
-rm -rf %{buildroot}
 %vdr_plugin_install
-
-%clean
-rm -rf %{buildroot}
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
