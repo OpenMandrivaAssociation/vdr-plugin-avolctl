@@ -3,7 +3,7 @@
 Summary:	VDR plugin: Alsa Volume Control
 Name:		vdr-plugin-%plugin
 Version:	0.3b
-Release:	12
+Release:	13
 Group:		Video
 License:	GPL
 URL:		http://martins-kabuff.de/avolctl.html
