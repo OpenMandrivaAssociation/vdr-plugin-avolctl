@@ -6,7 +6,7 @@ Version:	0.3b
 Release:	14
 Group:		Video
 License:	GPL
-URL:		http://martins-kabuff.de/avolctl.html
+URL:		https://martins-kabuff.de/avolctl.html
 Source:		http://martins-kabuff.de/download/vdr-%plugin-%version.tar.bz2
 Patch0:		avolctl-0.3b-i18n-1.6.patch
 BuildRequires:	vdr-devel >= 1.6.0
